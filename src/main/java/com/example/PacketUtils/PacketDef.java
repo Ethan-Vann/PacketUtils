@@ -247,4 +247,10 @@ public class PacketDef {
         String[][] writeMethods = ObfuscatedNames.IF_BUTTONX_WRITES;
         return new PacketDef(ObfuscatedNames.IF_BUTTONX_OBFUSCATEDNAME, writeData, writeMethods, PacketType.IF_BUTTONX);
     }
+
+    public static PacketDef getSetHeading() {
+        String[] writeData = new String[]{ObfuscatedNames.SET_HEADING_WRITE1};
+        String[][] writeMethods = ObfuscatedNames.SET_HEADING_WRITES;
+        return new PacketDef(ObfuscatedNames.SET_HEADING_OBFUSCATEDNAME, writeData, writeMethods, PacketType.SET_HEADING);
+    }
 }

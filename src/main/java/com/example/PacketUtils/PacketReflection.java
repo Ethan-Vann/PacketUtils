@@ -133,6 +133,9 @@ public class PacketReflection {
         }
         getPacketBufferNode.setAccessible(false);
         List<String> params = null;
+        if (def.type == PacketType.SET_HEADING) {
+            params = List.of("direction");
+        }
         if (def.type == PacketType.RESUME_NAMEDIALOG || def.type == PacketType.RESUME_STRINGDIALOG) {
             params = List.of("length", "string");
         }
